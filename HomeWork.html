@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+ // ЗАДАНИЕ 1
+    function getUserNumber(){
+     let userNumber = +prompt('Введите число в диапазоне от 0 до 999');
+     while (true) {
+        if (!Number.isInteger(userNumber) || userNumber < 0) {
+        alert('Вы ввели неверное число, попробуйте еще раз');
+        getUserNumber();
+     }
+        else if (userNumber > 999) {
+            console.log('Ваше число больше необходимого\n',
+            numbers);
+            return;
+        }
+        else {
+        setNumberInObj(userNumber);
+        console.log(numbers);
+        break;
+        }
+     }
+ }
+
+ function setNumberInObj(userNumbers) {
+    numbers.unit = userNumbers % 10;
+    numbers.decades = Math.floor(userNumbers % 100 / 10);
+    numbers.hundreds = Math.floor(userNumbers % 1000 / 100);
+}
+
+const numbers = {};
+getUserNumber();
+
+
+</script>
+</body>
+</html>
