@@ -1,0 +1,36 @@
+.board {
+    width: 451px;
+    height: 451px;
+}
+
+.boardLine {
+    display: flex;
+    max-width: 451px;
+    height: 50px;
+    text-align: center;
+}
+
+.boardCell {
+    width: 50px;
+    max-height: 451px;
+    text-align: center;
+    border: 0.5px solid black;
+}
+
+.boardLine:nth-child(2n) .boardCell:nth-child(2n) {
+    background-color: black;
+}
+
+.boardLine:nth-child(2n + 3) .boardCell:nth-child(2n + 3) {
+    background-color: black;
+}
+
+.boardCell:first-child {
+    background-color: white;
+    border: none;
+}
+
+.boardLine:first-child * {
+    background-color: white;
+    border: none;
+}

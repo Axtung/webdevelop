@@ -1,0 +1,52 @@
+
+.contain {
+    margin: 0 auto;
+        width: 1024px;
+    border: 1px solid black;
+}
+
+.header {
+    background-color: grey;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.cart {
+    height: 100vh;
+    border: 1px solid black;
+    background-color: bisque;
+}
+
+.cartButton {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: burlywood;
+    margin: 0 auto;
+}
+
+.cartProduct {
+    height: 50vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: darkgrey;
+}
+
+.product {
+    border: 1px solid black;
+    width: 200px;
+    height: 300px;
+}
+
+.TotalPrice {
+    width: 260px;
+    height: 50px;
+    border: 1px solid black;
+}
